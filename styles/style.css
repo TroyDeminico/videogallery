@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Titillium Web', sans-serif;
+    background-image: conic-gradient(from .5turn at 0% 0%, #00c476, 10%, #82b0ff, 90%, #00c476);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: whitesmoke;
+}
+header,footer {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid whitesmoke;
+    margin-bottom: 3vh;
+}
+
+header h2 {
+    font-size: 250%;
+}
+
+header img {
+    max-width: 200px;
+    margin: 2vh;
+}
+
+nav {
+    flex: 0 1 300px;
+}
+
+nav li {
+    width: 80%;
+    border: 1px solid whitesmoke;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    position: sticky;
+    top: 100px;
+}
+
+nav a {
+    font-weight: bold;
+    font-size: 120%;
+    text-decoration: none;
+    padding: 2vh;
+    display: block;
+    background-color: rgb(78, 78, 155);
+    border-radius: 5px;
+    color: greenyellow;
+}
+
+nav a :link, nav a:visited {
+    color: white;
+} 
+
+nav li a:hover {
+    cursor: pointer;
+    color: rgb(147, 14, 155);
+    background-color: rgb(95, 239, 107);
+}
+
+main {
+    flex: 0 1 600px;
+}
+
+article {
+    padding: 4vh 2vh;
+    background-color: aqua;
+    margin-bottom: 2vh;
+    border: 1px solid white;
+    color: black;
+}
+
+.videowrapper {
+    background-color: black;
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    margin: 0 auto;
+    border: 6px ridge #808080;
+}
+.videowrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.caption {
+    margin: 2vh 0;
+}
+
+#cornerBtn {
+    display: none;
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 10px;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: white;
+    color: rgb(55, 64, 163);
+    font-size: 110%;
+    font-weight: bold;
+    transition: all 300ms;
+}
+
+#cornerBtn:hover {
+    background-color: rgb(55, 64, 163);
+    color: white;
+    padding: 15px;
+}
+
+footer {
+    padding: 3vh 0;
+    border-top: 1px solid whitesmoke;
+}
+
+footer p {
+    font-size: 80%;
+    text-align: center;
+    color: white;
+}
